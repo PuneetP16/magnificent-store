@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Magnificent-Store</title>
+
+		<!-- Fav-Icon -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="assets/brand-logos/logo-bg-white.png"
+		/>
+
+		<!-- Box-Icons -->
+		<link
+			href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Magnificent-UI library -->
+		<link
+			rel="stylesheet"
+			href="https://magnificentui.netlify.app/src/magnificent.css"
+		/>
+
+		<!-- to-remove -->
+		<link rel="stylesheet" href="/styles/document-style.css" />
+
+		<!-- Store-CSS -->
+		<link rel="stylesheet" href="/styles/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<a class="brand__text grid-center" href="/pages/homepage/homepage.html"
+				>Magnificent Store</a
+			>
+			<form class="search_box" method="get">
+				<input
+					type="text"
+					class="input_box"
+					placeholder="Search for items"
+					required
+				/>
+
+				<button type="submit" class="btn btn--primary btn--icon">
+					<i class="bx bx-search-alt-2"></i>
+				</button>
+			</form>
+			<div class="header__nav_btns">
+				<a class="btn btn--primary" href="/pages/signup/signup.html">Sign up</a>
+				<a
+					class="header__links badge_base btn btn--primary btn--icon btn--circular"
+				>
+					<i class="bx bxs-heart"></i>
+					<span class="badge color--primary width_height--sm">5+</span>
+				</a>
+				<a
+					class="header__links badge_base btn btn--primary btn--icon btn--circular"
+					href="#"
+				>
+					<i class="bx bxs-cart"></i>
+					<span class="badge color--primary width_height--sm">5+</span>
+				</a>
+			</div>
+		</header>
+		<main>
+			<div class="center">
+				<form action="post" class="form flex" method="get">
+					<h2 class="h3">Login</h2>
+					<div class="form__item form__email form__input_box">
+						<label for="email" class="label">Email Address</label>
+						<input
+							type="email"
+							class="input_box"
+							placeholder="yours@mail.com"
+							required
+						/>
+					</div>
+					<div class="form__item form__password form__input_box">
+						<label for="password" class="label">Password</label>
+						<input type="password" class="input_box" required />
+					</div>
+					<div class="form__item form__actions">
+						<input
+							type="checkbox"
+							class="checkbox"
+							name="remember_me"
+							id="remember_me"
+						/>
+						<label for="remember_me">Remember me</label>
+						<a href="#" class="forgot_pass">Forgot your Password?</a>
+					</div>
+					<a class="form__login_btn btn btn--primary" href="#"> Login </a>
+					<a
+						class="form__signup_btn btn btn--icon"
+						href="/pages/signup/signup.html"
+					>
+						New here? Create New Account
+						<i class="bx bx-right-arrow-alt"></i>
+					</a>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,11 @@
+@import url(/styles/document-style.css);
+@import url(/styles/base-style.css);
+
+/* components */
+@import url(/styles/header.css);
+@import url(/styles/footer.css);
+
+/* pages */
+@import url(/pages/homepage/homepage.css);
+@import url(/pages/signin/signin.css);
+@import url(/pages/products/products.css);

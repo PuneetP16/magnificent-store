@@ -1,0 +1,91 @@
+/* login page */
+
+.center {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	border: none;
+	background-color: transparent;
+	box-shadow: none;
+	padding: none;
+}
+
+.form__signup_btn:hover {
+	color: var(--COLOR-PRIMARY);
+}
+
+.form {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	align-items: flex-start;
+	max-width: 52rem;
+	gap: 2.4rem;
+	padding: 5rem;
+	margin-left: 30rem;
+	box-shadow: 0 5px 10px rgb(0 0 0 / 20%),
+		0 3px 1px -2px var(--COLOR-BOX-SHADOW1), 0 2px 2px var(--COLOR-BOX-SHADOW2),
+		0 1px 5px var(--COLOR-BOX-SHADOW3);
+}
+
+.form h2 {
+	align-self: center;
+}
+
+.form > a {
+	width: 100%;
+	display: flex;
+	place-content: center;
+}
+
+.input_box {
+	font-size: 1.6rem;
+	width: 100%;
+	border-radius: 4px;
+	padding: 0.5rem 1rem;
+	border: 1px solid #c5c5c5;
+	background-color: var(--COLOR-BG);
+}
+
+.input_box:hover {
+	border: 1px solid var(--COLOR-PRIMARY);
+}
+
+.input_box:focus {
+	border: 1px solid var(--COLOR-PRIMARY);
+}
+.label {
+	color: var(--BLACK);
+	font-weight: 500;
+}
+
+.form__item {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	width: 100%;
+}
+
+.form__actions {
+	align-items: center;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
+
+.form__actions label {
+	padding-left: 1rem;
+}
+
+.form__actions .forgot_pass {
+	margin-left: auto;
+}
+
+.form__actions .forgot_pass:hover {
+	color: var(--COLOR-PRIMARY);
+}

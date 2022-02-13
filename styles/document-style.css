@@ -1,0 +1,135 @@
+/* --navigation */
+.nav {
+	border:2px solid;
+	grid-area: nav;
+	padding-top: 2.6rem;
+	color: var(--COLOR-WHITE);
+}
+
+.nav__head {
+	font-weight: 500;
+	margin: 1rem 0 0.5rem 1rem;
+	font-size: 2.2rem;
+}
+
+.nav__items {
+	list-style: none;
+	width: 100%;
+	gap: 0.6rem;
+}
+
+.nav__list {
+	width: 120px;
+}
+
+.nav__links {
+	display: inline-block;
+	text-decoration: none;
+	padding: 0.5rem 8px;
+	width: 100%;
+	border-radius: 8px;
+	color: var(--COLOR-WHITE);
+}
+
+.nav__links:hover {
+	text-decoration: underline;
+	background-color: linear-gradient();
+}
+
+.nav_link--selected {
+	color: black;
+	font-weight: 600;
+	background-color: var(--COLOR-WHITE);
+}
+
+/* MAIN CONTENT */
+
+/* .main {
+	grid-area: main;
+	overflow-y: scroll;
+	margin: 0 0 1rem 0;
+	padding: 2rem 1rem 1rem 4rem;
+}
+
+.units_instruction {
+	color: var(--COLOR-PRIMARY);
+} */
+
+/* paragraph */
+
+/* .m_doc__para {
+	gap: 0.7rem;
+	margin-top: 0.3rem;
+}
+
+.m_doc_class {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	margin: 1rem 0;
+}
+
+.m_doc_class__item {
+	font-size: 1.5rem;
+	border: 0.5px solid var(--COLOR-PRIMARY);
+	background-color: var(--COLOR-PRIMARY);
+	border-radius: 1rem;
+	padding: 0.5rem 1rem;
+	color: var(--COLOR-PRIMARY);
+	margin: auto 2px;
+	color: var(--COLOR-WHITE);
+	font-weight: 500;
+}
+
+.lh4 {
+	line-height: 4rem;
+}
+
+p {
+	width: var(--WIDTH-MAIN-CONTENT);
+} */
+
+/* ----avatar doc-classes---- */
+/* 
+.color--online {
+	color: black;
+	background-color: var(--COLOR-SUCCESS);
+}
+
+.color--offline {
+	background-color: var(--COLOR-OFFLINE);
+}
+
+.color--idle {
+	color: black;
+	background-color: var(--COLOR-SECONDARY);
+}
+
+.color--busy {
+	background-color: var(--COLOR-DANGER);
+} */
+
+/* header */
+
+/* .social__handles {
+	display: flex;
+	gap: 1.2rem;
+	padding-right: 2rem;
+}
+
+.social__links {
+	text-decoration: none;
+	font-size: 3.4rem;
+	color: inherit;
+}
+
+.social__links:hover,
+.brand__text:hover {
+	color: var(--COLOR-PRIMARY);
+}
+
+.social__links:active {
+	color: var(--COLOR-ACTIVE);
+} */

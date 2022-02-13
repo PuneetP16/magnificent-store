@@ -1,0 +1,68 @@
+/* DELETE UPTO HERE  */
+
+.main--homepage {
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 2rem 10rem;
+	gap: 3rem;
+}
+
+.section__heading {
+	color: var(--COLOR-PRIMARY);
+	font-weight: 500;
+}
+
+/* categories section */
+.homepage__section {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 3rem;
+	align-items: center;
+}
+
+.categories__items {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 2rem;
+	margin: auto;
+}
+
+.categories__list {
+	list-style-type: none;
+}
+
+.categories__links {
+	position: relative;
+	text-decoration: none;
+}
+
+.categories__links > img {
+	max-width: 22rem;
+}
+
+.categories__links > span {
+	background-color: white;
+	display: flex;
+	font-size: 1.4rem;
+	font-weight: 500;
+	justify-content: center;
+	opacity: 0.7;
+	position: absolute;
+	top: 5.7rem;
+	width: 22rem;
+	z-index: 3;
+}
+
+/* promo-section  */
+.promotion_container img {
+	margin: auto;
+	height: 75rem;
+	width: auto;
+}
+
+/* featured section */
+
+.featured .categories__items {
+	justify-content: center;
+	gap: 3rem;
+}
