@@ -1,0 +1,168 @@
+/* HEADER, NAV AND LAYOUT */
+
+.body--products {
+	display: grid;
+	min-height: 100vh;
+	grid-template-columns: 25rem 1fr;
+	grid-template-rows: 6rem calc(100vh - 6rem);
+	grid-template-areas:
+		"header header"
+		"nav main";
+	transition: all 0.3s ease-in;
+	margin: auto;
+}
+
+.body--products .featured .categories__items {
+	gap: 2.8rem;
+}
+
+/* --navigation */
+.nav {
+	grid-area: nav;
+	margin: 2.6rem;
+	color: var(--COLOR-WHITE);
+	border: none;
+}
+
+.nav--products {
+	/*  Just put variations in this */
+	color: var(--BLACK);
+	padding: 0;
+}
+
+.nav__head {
+	font-weight: 500;
+	margin: 1rem 0 0.5rem 1rem;
+	font-size: 2.2rem;
+}
+
+.nav__items {
+	list-style: none;
+	width: 100%;
+	gap: 0.6rem;
+}
+
+.nav__list {
+	width: 120rem;
+}
+
+.nav__links {
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px 8px;
+	width: 100%;
+	border-radius: 8px;
+	color: var(--COLOR-WHITE);
+}
+
+.nav__links:hover {
+	text-decoration: underline;
+	background-color: linear-gradient();
+}
+
+.nav_link--selected {
+	color: black;
+	font-weight: 600;
+	background-color: var(--COLOR-WHITE);
+}
+
+/* MAIN CONTENT */
+
+/* -----filter Form-----  */
+.filter {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 2.5rem;
+}
+
+.filter > * {
+	font-size: 1.4rem;
+}
+
+.filter__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.filter__section .filter__head {
+	margin-bottom: 8px;
+}
+
+.filter__head {
+	font-weight: 500;
+}
+
+.filter--reset {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	text-decoration: underline;
+	font-size: 1.6rem;
+}
+
+/* range--filter  */
+
+.range__head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 7px;
+}
+
+.range__amount {
+	list-style: none;
+}
+
+.range__slider {
+	width: 100%;
+}
+
+/* checkbox--filter  */
+
+.filter__items {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 8px;
+}
+
+.filter__list {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 7px;
+}
+
+.filter__checkbox,
+.filter__radio {
+	width: 1.6rem;
+	height: 1.6rem;
+}
+
+.filter__item_label {
+	/*Will style it */
+}
+
+/* ---- products main ---   */
+.main--products {
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 2rem;
+	gap: 3rem;
+}
+
+.main--products .section__heading {
+	text-align: center;
+}
+
+.products__section {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 3rem;
+}
+
+/* utilities  */
+
+.display--none {
+	display: none;
+}
