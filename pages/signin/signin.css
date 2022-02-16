@@ -29,7 +29,7 @@ a {
 	min-width: 50rem;
 	gap: 2.4rem;
 	padding: 5rem;
-	box-shadow: 0 5px 10px rgb(0 0 0 / 20%),
+	box-shadow: 0 5px 10px var(--COLOR-CARD-BOX-SHADOW0),
 		0 3px 1px -2px var(--COLOR-BOX-SHADOW1), 0 2px 2px var(--COLOR-BOX-SHADOW2),
 		0 1px 5px var(--COLOR-BOX-SHADOW3);
 }
@@ -48,7 +48,7 @@ a {
 	font-size: 1.6rem;
 	width: 100%;
 	border-radius: 4px;
-	padding: 0.5rem 1rem;
+	padding: 5px 1rem;
 	border: 1px solid #c5c5c5;
 	background-color: var(--COLOR-BG);
 }

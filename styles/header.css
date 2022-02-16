@@ -6,6 +6,7 @@
 	display: flex;
 	grid-area: header;
 	justify-content: space-around;
+	align-items: center;
 	width: 100%;
 	position: sticky;
 	top: 0;
@@ -63,7 +64,6 @@
 	font-size: 3rem;
 	font-weight: 500;
 	width: fit-content;
-	height: 100%;
 }
 
 /* Search BOX  */
@@ -80,7 +80,7 @@
 .search_box .input_box {
 	font-size: 1.4rem;
 	width: 30rem;
-	padding: 0.7rem 1rem;
+	padding: 7px 1rem;
 	border: none;
 	background-color: transparent;
 }

@@ -43,13 +43,13 @@
 }
 
 .nav__list {
-	width: 120px;
+	width: 120rem;
 }
 
 .nav__links {
 	display: inline-block;
 	text-decoration: none;
-	padding: 0.5rem 8px;
+	padding: 5px 8px;
 	width: 100%;
 	border-radius: 8px;
 	color: var(--COLOR-WHITE);

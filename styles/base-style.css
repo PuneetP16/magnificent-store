@@ -11,6 +11,20 @@ body {
 	margin: auto;
 }
 
+/* -----nav---- */
+.nav {
+	grid-area: nav;
+}
+
+/* ---main---  */
+
+.main {
+	grid-area: main;
+	overflow-y: scroll;
+	margin: 0 0 1rem 0;
+	padding: 2rem 1rem 1rem 4rem;
+}
+
 @media only screen and (max-width: 720px) {
 	:root {
 		font-size: 65%;
@@ -42,18 +56,4 @@ body {
 	.nav__links {
 		width: 10rem;
 	}
-}
-
-/* -----nav---- */
-.nav {
-	grid-area: nav;
-}
-
-/* ---main---  */
-
-.main {
-	grid-area: main;
-	overflow-y: scroll;
-	margin: 0 0 1rem 0;
-	padding: 2rem 1rem 1rem 4rem;
 }
