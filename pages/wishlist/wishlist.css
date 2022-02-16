@@ -1,0 +1,76 @@
+/* Move to utility */
+.link {
+	color: var(--COLOR-SECONDARY);
+}
+
+.link:hover {
+	color: var(--COLOR-PRIMARY);
+	text-decoration: underline;
+}
+/* Move to utility - UTPO HERE*/
+
+/*-------------------- body wishlist ------------------------ */
+
+.body--wishlist {
+	display: grid;
+	min-height: 100vh;
+	grid-template-columns: 1fr;
+	grid-template-rows: 7rem 1fr;
+	grid-template-areas:
+		"header"
+		"main";
+	transition: all 0.3s ease-in;
+	max-width: auto;
+	margin: auto;
+}
+
+.main--wishlist {
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 2rem 10rem;
+	gap: 3rem;
+}
+
+/*-------------------- main wishlist ------------------------ */
+
+.main--wishlist .section__heading {
+	text-align: center;
+}
+
+.wishlist__section {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 3rem;
+}
+
+.main--wishlist .card .like {
+	background-color: var(--COLOR-PRIMARY);
+	color: var(--COLOR-WHITE);
+}
+
+/* To change on click in future */
+/* .main--wishlist .card .like:hover {
+	border: 2px solid var(--COLOR-PRIMARY);
+    color: var(--COLOR-PRIMARY);
+	background-color: var(--COLOR-WHITE);
+} */
+
+/* Load if wishlist empty */
+.wishlist_empty {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 1rem;
+	align-items: center;
+}
+
+.wishlist_empty .h6 {
+	font-size: 1rem;
+}
+
+.wishlist_empty__head {
+	color: var(--COLOR-SECONDARY);
+}
+
+.wishlist_empty__content {
+	color: var(--COLOR-PRIMARY);
+}
