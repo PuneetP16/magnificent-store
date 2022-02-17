@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Magnificent-Store</title>
+
+		<!-- Fav-Icon -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="assets/brand-logos/logo-bg-white.png"
+		/>
+
+		<!-- Box-Icons -->
+		<link
+			href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Magnificent-UI library -->
+		<link
+			rel="stylesheet"
+			href="https://magnificentui.netlify.app/src/magnificent.css"
+		/>
+
+		<!-- Store-CSS -->
+		<link rel="stylesheet" href="/styles/style.css" />
+	</head>
+	<body class="body--cart">
+		<header class="header">
+			<a class="brand__text" href="/pages/homepage/homepage.html"
+				>Magnificent Store</a
+			>
+			<form class="search_box" method="get">
+				<input
+					type="text"
+					class="input_box"
+					placeholder="Search for items"
+					required
+				/>
+
+				<button type="submit" class="btn btn--primary btn--icon">
+					<i class="bx bx-search-alt-2"></i>
+				</button>
+			</form>
+			<div class="header__nav_btns">
+				<a class="btn btn--primary" href="/pages/signin/signin.html">Login</a>
+				<a
+					class="header__links badge_base btn btn--primary btn--icon btn--circular"
+					href="/pages/wishlist/wishlist.html"
+				>
+					<i class="bx bxs-heart"></i>
+					<span class="badge color--primary width_height--sm">5+</span>
+				</a>
+				<a
+					class="header__links badge_base btn btn--primary btn--icon btn--circular"
+					href="/pages/cart/cart.html"
+				>
+					<i class="bx bxs-cart"></i>
+					<span class="badge color--primary width_height--sm">5+</span>
+				</a>
+			</div>
+		</header>
+		<main class="main--cart">
+			<section class="cart__section">
+				<h2 class="h3 section__heading">My Cart (<span>3</span>)</h2>
+			</section>
+
+			<!-- loadS if cart empty  -->
+			<section class="cart__section featured">
+				<div class="cart_empty h3">
+					<div class="h6">info: loads only when wishllist empty</div>
+					<div class="cart_empty__head">Cart Empty!</div>
+					<div class="cart_empty__content">
+						Save your favourite products to cart
+					</div>
+					<a class="link" href="/pages/products/products.html"> From HERE.. </a>
+				</div>
+			</section>
+			<!-- loadS if cart empty-- END  -->
+
+			<section class="cart__wrapper featured">
+				<!-- --- CARDS SECTION---- -->
+				<ul class="categories__items_cart">
+					<!-- -------SHOPPING CART- Hoizontal V2 CARDS------- -->
+					<li class="categories__list">
+						<article class="card card--shopping card--cart card--horizontal_v2">
+							<div class="card__content flex">
+								<header class="card__header flex-center">
+									<figure class="card__figure">
+										<img
+											class="card_img"
+											src="https://picsum.photos/400/350"
+											alt="randomly generated"
+										/>
+									</figure>
+								</header>
+								<div class="card__body">
+									<div class="card__header_text">
+										<h2 class="card__title">Cricket Bag</h2>
+										<h3 class="card__subtitle">MRF Genius Cameo Senior</h3>
+									</div>
+									<p class="card__para">
+										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
+										Reic iendis sint perspi ciatis
+									</p>
+									<p class="card__price flex">
+										<span class="disc_price">₹1,500</span>
+										<span class="original_price">₹2,000</span>
+										<span class="pct_disc">25% off</span>
+									</p>
+									<div class="card__quantity_wrapper">
+										<div class="card__quantity form__input_box">
+											<label class="label" for="">Quantity:</label>
+											<select class="card__quantity_values">
+												<option class="input_box" value="1" selected>1</option>
+												<option class="input_box" value="2">2</option>
+												<option class="input_box" value="3">3</option>
+												<option class="input_box" value="4">4</option>
+												<option class="input_box" value="5">5</option>
+												<option class="input_box" value="6">6</option>
+												<option class="input_box" value="7">7</option>
+												<option class="input_box" value="8">8</option>
+												<option class="input_box" value="9">9</option>
+												<option class="input_box" value="9">10</option>
+											</select>
+										</div>
+										<a
+											class="card_btn--delete btn btn--outline--danger btn--icon btn--round grid-center"
+										>
+											<i class="bx bxs-trash-alt"></i>
+										</a>
+									</div>
+									<div class="card__footer">
+										<div class="card__actions">
+											<button
+												class="card__button btn btn--outline--primary display--none"
+											>
+												Add to Cart
+											</button>
+											<button class="card__button btn btn--outline--primary">
+												Move to Wishlist
+											</button>
+										</div>
+										<ul class="card__icons display--none">
+											<li class="card__list flex-center">
+												<a
+													href="#"
+													class="card__link btn btn--outline--primary btn--icon btn--circular like"
+												>
+													<i class="bx bx-heart"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card__badge ribbon">
+								<span>new</span>
+							</div>
+							<div
+								class="card__dismiss dark btn btn--icon btn--close--transparent alert--btn__dismiss btn--circular"
+							>
+								<i class="bx bx-x"></i>
+							</div>
+						</article>
+					</li>
+					<li class="categories__list">
+						<article
+							class="card card--shopping card--cart card--horizontal_v2 card--dismiss"
+						>
+							<div class="card__content flex">
+								<header class="card__header flex-center">
+									<figure class="card__figure">
+										<img
+											class="card_img"
+											src="https://picsum.photos/400/350"
+											alt="randomly generated"
+										/>
+									</figure>
+								</header>
+								<div class="card__body">
+									<div class="card__header_text">
+										<h2 class="card__title">Cricket Bag</h2>
+										<h3 class="card__subtitle">MRF Genius Cameo Senior</h3>
+									</div>
+									<p class="card__para">
+										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
+										Reic iendis sint perspi ciatis
+									</p>
+									<p class="card__price flex">
+										<span class="disc_price">₹1,500</span>
+										<span class="original_price">₹2,000</span>
+										<span class="pct_disc">25% off</span>
+									</p>
+									<div class="card__quantity_wrapper">
+										<div class="card__quantity form__input_box">
+											<label class="label" for="">Quantity:</label>
+											<select class="card__quantity_values">
+												<option class="input_box" value="1" selected>1</option>
+												<option class="input_box" value="2">2</option>
+												<option class="input_box" value="3">3</option>
+												<option class="input_box" value="4">4</option>
+												<option class="input_box" value="5">5</option>
+												<option class="input_box" value="6">6</option>
+												<option class="input_box" value="7">7</option>
+												<option class="input_box" value="8">8</option>
+												<option class="input_box" value="9">9</option>
+												<option class="input_box" value="9">10</option>
+											</select>
+										</div>
+									</div>
+									<div class="card__footer">
+										<div class="card__actions">
+											<button
+												class="card__button btn btn--outline--primary display--none"
+											>
+												Add to Cart
+											</button>
+											<button class="card__button btn btn--outline--primary">
+												Move to Wishlist
+											</button>
+										</div>
+										<ul class="card__icons display--none">
+											<li class="card__list flex-center">
+												<a
+													href="#"
+													class="card__link btn btn--outline--primary btn--icon btn--circular like"
+												>
+													<i class="bx bx-heart"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card__badge ribbon">
+								<span>new</span>
+							</div>
+							<div
+								class="card__dismiss dark btn btn--icon btn--close--transparent alert--btn__dismiss btn--circular"
+							>
+								<i class="bx bx-x"></i>
+							</div>
+						</article>
+					</li>
+					<li class="categories__list">
+						<article class="card card--shopping card--cart card--horizontal_v2">
+							<div class="card__content flex">
+								<header class="card__header flex-center">
+									<figure class="card__figure">
+										<img
+											class="card_img"
+											src="https://picsum.photos/400/350"
+											alt="randomly generated"
+										/>
+									</figure>
+								</header>
+								<div class="card__body">
+									<div class="card__header_text">
+										<h2 class="card__title">Cricket Bag</h2>
+										<h3 class="card__subtitle">MRF Genius Cameo Senior</h3>
+									</div>
+									<p class="card__para">
+										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
+										Reic iendis sint perspi ciatis
+									</p>
+									<p class="card__price flex">
+										<span class="disc_price">₹1,500</span>
+										<span class="original_price">₹2,000</span>
+										<span class="pct_disc">25% off</span>
+									</p>
+									<div class="card__quantity_wrapper">
+										<div class="card__quantity form__input_box">
+											<label class="label" for="">Quantity:</label>
+											<select class="card__quantity_values">
+												<option class="input_box" value="1" selected>1</option>
+												<option class="input_box" value="2">2</option>
+												<option class="input_box" value="3">3</option>
+												<option class="input_box" value="4">4</option>
+												<option class="input_box" value="5">5</option>
+												<option class="input_box" value="6">6</option>
+												<option class="input_box" value="7">7</option>
+												<option class="input_box" value="8">8</option>
+												<option class="input_box" value="9">9</option>
+												<option class="input_box" value="9">10</option>
+											</select>
+										</div>
+										<a
+											class="card_btn--delete btn btn--outline--danger btn--icon btn--round grid-center"
+										>
+											<i class="bx bxs-trash-alt"></i>
+										</a>
+									</div>
+									<div class="card__footer">
+										<div class="card__actions">
+											<button
+												class="card__button btn btn--outline--primary display--none"
+											>
+												Add to Cart
+											</button>
+											<button class="card__button btn btn--outline--primary">
+												Move to Wishlist
+											</button>
+										</div>
+										<ul class="card__icons display--none">
+											<li class="card__list flex-center">
+												<a
+													href="#"
+													class="card__link btn btn--outline--primary btn--icon btn--circular like"
+												>
+													<i class="bx bx-heart"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card__badge ribbon">
+								<span>new</span>
+							</div>
+							<div
+								class="card__dismiss dark btn btn--icon btn--close--transparent alert--btn__dismiss btn--circular"
+							>
+								<i class="bx bx-x"></i>
+							</div>
+						</article>
+					</li>
+					<li class="categories__list">
+						<article class="card card--shopping card--cart card--horizontal_v2">
+							<div class="card__content flex">
+								<header class="card__header flex-center">
+									<figure class="card__figure">
+										<img
+											class="card_img"
+											src="https://picsum.photos/400/350"
+											alt="randomly generated"
+										/>
+									</figure>
+								</header>
+								<div class="card__body">
+									<div class="card__header_text">
+										<h2 class="card__title">Cricket Bag</h2>
+										<h3 class="card__subtitle">MRF Genius Cameo Senior</h3>
+									</div>
+									<p class="card__para">
+										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
+										Reic iendis sint perspi ciatis
+									</p>
+									<p class="card__price flex">
+										<span class="disc_price">₹1,500</span>
+										<span class="original_price">₹2,000</span>
+										<span class="pct_disc">25% off</span>
+									</p>
+									<div class="card__quantity_wrapper">
+										<div class="card__quantity form__input_box">
+											<label class="label" for="">Quantity:</label>
+											<select class="card__quantity_values">
+												<option class="input_box" value="1" selected>1</option>
+												<option class="input_box" value="2">2</option>
+												<option class="input_box" value="3">3</option>
+												<option class="input_box" value="4">4</option>
+												<option class="input_box" value="5">5</option>
+												<option class="input_box" value="6">6</option>
+												<option class="input_box" value="7">7</option>
+												<option class="input_box" value="8">8</option>
+												<option class="input_box" value="9">9</option>
+												<option class="input_box" value="9">10</option>
+											</select>
+										</div>
+										<a
+											class="card_btn--delete btn btn--outline--danger btn--icon btn--round grid-center"
+										>
+											<i class="bx bxs-trash-alt"></i>
+										</a>
+									</div>
+									<div class="card__footer">
+										<div class="card__actions">
+											<button
+												class="card__button btn btn--outline--primary display--none"
+											>
+												Add to Cart
+											</button>
+											<button class="card__button btn btn--outline--primary">
+												Move to Wishlist
+											</button>
+										</div>
+										<ul class="card__icons display--none">
+											<li class="card__list flex-center">
+												<a
+													href="#"
+													class="card__link btn btn--outline--primary btn--icon btn--circular like"
+												>
+													<i class="bx bx-heart"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card__badge ribbon">
+								<span>new</span>
+							</div>
+							<div
+								class="card__dismiss dark btn btn--icon btn--close--transparent alert--btn__dismiss btn--circular"
+							>
+								<i class="bx bx-x"></i>
+							</div>
+						</article>
+					</li>
+					<li class="categories__list">
+						<article class="card card--shopping card--cart card--horizontal_v2">
+							<div class="card__content flex">
+								<header class="card__header flex-center">
+									<figure class="card__figure">
+										<img
+											class="card_img"
+											src="https://picsum.photos/400/350"
+											alt="randomly generated"
+										/>
+									</figure>
+								</header>
+								<div class="card__body">
+									<div class="card__header_text">
+										<h2 class="card__title">Cricket Bag</h2>
+										<h3 class="card__subtitle">MRF Genius Cameo Senior</h3>
+									</div>
+									<p class="card__para">
+										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
+										Reic iendis sint perspi ciatis
+									</p>
+									<p class="card__price flex">
+										<span class="disc_price">₹1,500</span>
+										<span class="original_price">₹2,000</span>
+										<span class="pct_disc">25% off</span>
+									</p>
+									<div class="card__quantity_wrapper">
+										<div class="card__quantity form__input_box">
+											<label class="label" for="">Quantity:</label>
+											<select class="card__quantity_values">
+												<option class="input_box" value="1" selected>1</option>
+												<option class="input_box" value="2">2</option>
+												<option class="input_box" value="3">3</option>
+												<option class="input_box" value="4">4</option>
+												<option class="input_box" value="5">5</option>
+												<option class="input_box" value="6">6</option>
+												<option class="input_box" value="7">7</option>
+												<option class="input_box" value="8">8</option>
+												<option class="input_box" value="9">9</option>
+												<option class="input_box" value="9">10</option>
+											</select>
+										</div>
+										<a
+											class="card_btn--delete btn btn--outline--danger btn--icon btn--round grid-center"
+										>
+											<i class="bx bxs-trash-alt"></i>
+										</a>
+									</div>
+									<div class="card__footer">
+										<div class="card__actions">
+											<button
+												class="card__button btn btn--outline--primary display--none"
+											>
+												Add to Cart
+											</button>
+											<button class="card__button btn btn--outline--primary">
+												Move to Wishlist
+											</button>
+										</div>
+										<ul class="card__icons display--none">
+											<li class="card__list flex-center">
+												<a
+													href="#"
+													class="card__link btn btn--outline--primary btn--icon btn--circular like"
+												>
+													<i class="bx bx-heart"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card__badge ribbon">
+								<span>new</span>
+							</div>
+							<div
+								class="card__dismiss dark btn btn--icon btn--close--transparent alert--btn__dismiss btn--circular"
+							>
+								<i class="bx bx-x"></i>
+							</div>
+						</article>
+					</li>
+				</ul>
+
+				<aside class="billing_section">
+					<form action="post" class="bill_wrapper">
+						<h3 class="h5 bill__head">Price Details</h3>
+						<hr />
+						<section class="bill__section">
+							<ul class="bill__items">
+								<li class="bill__list">
+									<div class="bill__item">Price (<span>5</span> items)</div>
+									<div class="bill__item">
+										₹<span id="initial-total">10999</span>
+									</div>
+								</li>
+								<li class="bill__list">
+									<div class="bill__item">Discount</div>
+									<div class="bill__item">
+										-₹<span id="discounted-amount">3999</span>
+									</div>
+								</li>
+								<li class="bill__list">
+									<div class="bill__item">Delivery Charges</div>
+									<div class="bill__item">
+										₹<span id="delivery-charges">499</span>
+									</div>
+								</li>
+							</ul>
+						</section>
+						<hr />
+						<ul class="bill__total">
+							<li class="bill__item">TOTAL AMOUNT</li>
+							<li class="bill__item">₹<span id="final-total">7499</span></li>
+						</ul>
+						<hr />
+						<div class="bill__description">
+							You will save ₹1999 on this order
+						</div>
+						<a class="Bill__submit_btn btn btn--primary" href="#">
+							PLACE ORDER
+						</a>
+					</form>
+					<hr />
+				</aside>
+			</section>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,105 @@
+.body--cart {
+	display: grid;
+	min-height: 100vh;
+	grid-template-columns: 1fr;
+	grid-template-rows: 7rem 1fr;
+	grid-template-areas:
+		"header"
+		"main";
+	transition: all 0.3s ease-in;
+	max-width: auto;
+	margin: auto;
+}
+
+.main--cart {
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 2rem 10rem;
+	gap: 3rem;
+}
+
+/*-------------------- main cart ------------------------ */
+
+.main--cart .section__heading {
+	text-align: center;
+	font-weight: 600;
+}
+
+.cart__section {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 3rem;
+}
+
+.cart_empty {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 1rem;
+	align-items: center;
+}
+
+.cart_empty .h6 {
+	font-size: 1rem;
+}
+
+.cart_empty__head {
+	color: var(--COLOR-SECONDARY);
+}
+
+.cart_empty__content {
+	color: var(--COLOR-PRIMARY);
+}
+
+.cart__wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	gap: 5rem;
+}
+
+.categories__items_cart {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 2rem;
+}
+
+/* -------- Billing Section ---------  */
+
+.billing_section {
+	width: 30%;
+	max-width: 70vw;
+}
+
+.bill_wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: space-between;
+	gap: 8px;
+	background-color: var(--COLOR-WHITE);
+	border: 1px solid var(--COLOR-OFFWHITE);
+	transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+	border-radius: 5px;
+	padding: 3rem 4rem;
+	position: sticky;
+	top: 10rem;
+}
+
+.bill__items,
+.bill__total {
+	list-style-type: none;
+}
+
+.bill__list,
+.bill__total {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.bill__total {
+	font-weight: 600;
+}
+
+.Bill__submit_btn {
+	text-align: center;
+}
