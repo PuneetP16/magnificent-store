@@ -1,0 +1,22 @@
+.main {
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 2rem 10rem;
+	gap: 3rem;
+}
+
+.main--home_page {
+	/* Style main container of home_page Page */
+}
+
+.main--products_page {
+	padding: 2rem;
+}
+
+.main--cart_page {
+	/* Style main container of Cart Page */
+}
+
+.main--wishlist_page {
+	/* Style main container of Wishlist Page */
+}

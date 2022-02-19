@@ -31,22 +31,22 @@
 	gap: 3rem;
 }
 
-.cart_empty {
+.cart--empty {
 	display: flex;
 	flex-flow: column nowrap;
 	gap: 1rem;
 	align-items: center;
 }
 
-.cart_empty .h6 {
+.cart--empty .h6 {
 	font-size: 1rem;
 }
 
-.cart_empty__head {
+.cart--empty__head {
 	color: var(--COLOR-SECONDARY);
 }
 
-.cart_empty__content {
+.cart--empty__content {
 	color: var(--COLOR-PRIMARY);
 }
 
@@ -100,6 +100,6 @@
 	font-weight: 600;
 }
 
-.Bill__submit_btn {
+.bill__submit_btn {
 	text-align: center;
 }
