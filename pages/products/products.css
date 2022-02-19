@@ -12,8 +12,8 @@
 	margin: auto;
 }
 
-.body--products .featured .categories__items {
-	gap: 2.8rem;
+.body--products .items_container .categories__items {
+	gap: 4rem;
 }
 
 /* --navigation */
@@ -137,10 +137,11 @@
 .filter__radio {
 	width: 1.6rem;
 	height: 1.6rem;
+	cursor: pointer;
 }
 
 .filter__item_label {
-	/*Will style it */
+	cursor: pointer;
 }
 
 /* ---- products main ---   */

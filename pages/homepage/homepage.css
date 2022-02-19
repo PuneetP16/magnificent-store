@@ -60,9 +60,9 @@
 	width: auto;
 }
 
-/* featured section */
+/* items_container section */
 
-.featured .categories__items {
+.items_container .categories__items {
 	justify-content: center;
-	gap: 3rem;
+	gap: 4rem;
 }
