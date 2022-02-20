@@ -47,7 +47,7 @@
 }
 
 .cart--empty__content {
-	color: var(--COLOR-PRIMARY);
+	color: var(--COLOR-TXT-PRIMARY);
 }
 
 .cart__wrapper {
@@ -102,4 +102,8 @@
 
 .bill__submit_btn {
 	text-align: center;
+}
+
+.card__quantity .label {
+	color: var(--COLOR-TXT);
 }

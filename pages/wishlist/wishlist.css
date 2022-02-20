@@ -74,3 +74,7 @@
 .wishlist_empty__content {
 	color: var(--COLOR-PRIMARY);
 }
+
+form .h5 {
+	color:var(--COLOR-PRIMARY)
+}

@@ -69,7 +69,9 @@
 /* MAIN CONTENT */
 
 /* -----filter Form-----  */
+
 .filter {
+	color: var(--COLOR-TXT);
 	display: flex;
 	flex-flow: column nowrap;
 	gap: 2.5rem;
@@ -99,6 +101,7 @@
 	cursor: pointer;
 	text-decoration: underline;
 	font-size: 1.6rem;
+	color:inherit
 }
 
 /* range--filter  */

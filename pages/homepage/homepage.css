@@ -1,4 +1,6 @@
-/* DELETE UPTO HERE  */
+:root {
+	--COLOR-TXT-PRIMARY:var(--COLOR-PRIMARY);
+}
 
 .main--homepage {
 	display: flex;
@@ -8,7 +10,7 @@
 }
 
 .section__heading {
-	color: var(--COLOR-PRIMARY);
+	color: var(--COLOR-TXT-PRIMARY);
 	font-weight: 500;
 }
 

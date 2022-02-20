@@ -15,12 +15,18 @@ a {
 	box-shadow: none;
 	padding: none;
 }
+.form__signup_btn {
+	opacity: 0.9;
+}
 
 .form__signup_btn:hover {
-	color: var(--COLOR-PRIMARY);
+	transform: scale(1);
+	opacity: 1;
 }
 
 .form {
+	background-color: var(--COLOR-PRIMARY-DARK);
+	color: var(--COLOR-TXT);
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-around;
@@ -72,6 +78,15 @@ a {
 	width: 100%;
 }
 
+.checkbox {
+	opacity: 0.9;
+}
+
+.checkbox:hover {
+	opacity:1;
+	cursor: pointer;
+}
+
 .form__actions {
 	align-items: center;
 	flex-flow: row wrap;
@@ -83,9 +98,10 @@ a {
 }
 
 .form__actions .forgot_pass {
+	opacity: 0.9;
 	margin-left: auto;
 }
 
 .form__actions .forgot_pass:hover {
-	color: var(--COLOR-PRIMARY);
+	opacity: 1;
 }
