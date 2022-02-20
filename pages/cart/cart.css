@@ -107,3 +107,7 @@
 .card__quantity .label {
 	color: var(--COLOR-TXT);
 }
+
+aside form .h5 {
+	color: var(--COLOR-PRIMARY);
+}
