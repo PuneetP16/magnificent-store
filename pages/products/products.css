@@ -119,6 +119,7 @@
 
 .range__slider {
 	width: 100%;
+	background-color: var(--COLOR-TXT-PRIMARY);
 }
 
 /* checkbox--filter  */
