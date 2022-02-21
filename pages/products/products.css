@@ -120,7 +120,7 @@
 .range__sliders {
 	appearance: none;
 	width: 100%;
-	background-color: var(--COLOR-TXT-PRIMARY);
+	background-color: var(--COLOR-BLACK);
 	height:8px;
 	border-radius: 8px;
 }
