@@ -117,7 +117,7 @@
 	list-style: none;
 }
 
-.range__sliders {
+.range__slidersz {
 	appearance: none;
 	width: 100%;
 	background-color: var(--COLOR-BLACK);
@@ -125,11 +125,11 @@
 	border-radius: 8px;
 }
 
-.range__sliders:hover::-webkit-slider-thumb {
+.range__slidersz:hover::-webkit-slider-thumb {
 	cursor: pointer;
 	transform: scale(1.1);
 }
-.range__sliders:hover::-moz-range-thumb {
+.range__slidersz:hover::-moz-range-thumb {
 	cursor: pointer;
 	transform: scale(1.1);
 }
