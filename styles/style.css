@@ -1,5 +1,8 @@
 @import url(/styles/base-style.css);
 
+/* utilities */
+@import url(/styles/utilities.css);
+
 /* components */
 @import url(/styles/header.css);
 @import url(/styles/footer.css);
