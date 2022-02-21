@@ -117,9 +117,23 @@
 	list-style: none;
 }
 
-.range__slider {
+.range__sliders {
+	appearance: none;
 	width: 100%;
 	background-color: var(--COLOR-TXT-PRIMARY);
+
+	height:8px;
+	border-radius: 8px;
+}
+
+.range__sliders:hover::-webkit-slider-thumb {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+.range__sliders:hover::-moz-range-thumb {
+	cursor: pointer;
+	transform: scale(1.1);
+
 }
 
 /* checkbox--filter  */
