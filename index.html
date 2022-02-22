@@ -29,9 +29,9 @@
 		<!-- Store-CSS -->
 		<link rel="stylesheet" href="/styles/style.css" />
 	</head>
-	<body class="body--products">
+	<body class="body--homepage">
 		<header class="header">
-			<a class="brand__text grid-center" href="/pages/homepage/homepage.html"
+			<a class="brand__text" href="/pages/homepage/homepage.html"
 				>Magnificent Store</a
 			>
 			<form class="search_box" method="get">
@@ -47,7 +47,7 @@
 				</button>
 			</form>
 			<div class="header__nav_btns">
-				<a class="btn btn--primary" href="/pages/signin/signin.html">Logout</a>
+				<a class="btn btn--primary" href="/pages/signin/signin.html">Login</a>
 				<a
 					class="header__links badge_base btn btn--primary btn--icon btn--circular"
 					href="/pages/wishlist/wishlist.html"
@@ -69,648 +69,75 @@
 				</a>
 			</div>
 		</header>
-		<nav class="nav nav--products">
-			<form action="post" class="filter">
-				<header class="filter__header">
-					<h3 class="h5 filter__head">Filters</h3>
-					<input type="reset" value="Clear All" class="filter--reset" />
-				</header>
-				<section class="filter__section">
-					<h3 class="h5 filter__head">Price</h3>
-					<ul class="range__head">
-						<li class="range__amount">500</li>
-						<li class="range__amount">1500</li>
-						<li class="range__amount">2500</li>
-					</ul>
-					<input
-						type="range"
-						min="500"
-						max="2500"
-						value="1500"
-						class="range__slider"
-					/>
-				</section>
-				<section class="filter__section">
-					<h3 class="h5 filter__head">Category</h3>
-					<ul class="filter__items">
-						<li class="filter__list">
-							<input type="checkbox" id="category1" class="filter__checkbox" />
-							<label for="category1" class="filter__item_label"
-								>Cricket Bats</label
-							>
-						</li>
-						<li class="filter__list">
-							<input type="checkbox" id="category2" class="filter__checkbox" />
-							<label for="category2" class="filter__item_label"
-								>Cricket Clothwears</label
-							>
-						</li>
-						<li class="filter__list">
-							<input type="checkbox" id="category3" class="filter__checkbox" />
-							<label for="category3" class="filter__item_label"
-								>Cricket Bats</label
-							>
-						</li>
-					</ul>
-				</section>
-				<section class="filter__section">
-					<h3 class="h5 filter__head">Rating</h3>
-					<ul class="filter__items">
-						<li class="filter__list">
-							<input
-								type="radio"
-								class="filter__radio"
-								name="star_ratings"
-								id="rating4"
-							/>
-							<label for="rating4" class="filter__item_label"
-								>4 Stars and above</label
-							>
-						</li>
-						<li class="filter__list">
-							<input
-								type="radio"
-								class="filter__radio"
-								name="star_ratings"
-								id="rating3"
-							/>
-							<label for="rating3" class="filter__item_label"
-								>3 Stars and above</label
-							>
-						</li>
-						<li class="filter__list">
-							<input
-								type="radio"
-								class="filter__radio"
-								name="star_ratings"
-								id="rating2"
-							/>
-							<label for="rating2" class="filter__item_label"
-								>2 Stars and above</label
-							>
-						</li>
-						<li class="filter__list">
-							<input
-								type="radio"
-								class="filter__radio"
-								name="star_ratings"
-								id="rating1"
-							/>
-							<label for="rating1" class="filter__item_label"
-								>1 Stars and above</label
-							>
-						</li>
-					</ul>
-				</section>
-				<section class="filter__section">
-					<h3 class="h5 filter__head">Sort By</h3>
-					<ul class="filter__items">
-						<li class="filter__list">
-							<input
-								type="radio"
-								class="filter__radio"
-								id="filter1"
-								name="sort_by"
-							/>
-							<label for="filter1" class="filter__item_label"
-								>Price - Low to High</label
-							>
-						</li>
-						<li class="filter__list">
-							<input
-								type="radio"
-								class="filter__radio"
-								id="filter1"
-								name="sort_by"
-							/>
-							<label for="filter1" class="filter__item_label"
-								>Price - High to Low</label
-							>
-						</li>
-					</ul>
-				</section>
-			</form>
-		</nav>
-		<main class="main main--products">
-			<section class="products__section items_container">
-				<h2 class="h4 section__heading">Showing All Products</h2>
+		<main class="main--homepage">
+			<section class="homepage__section categories">
+				<h2 class="h2 section__heading">Product Categories</h2>
+				<!-- <hr class="hr__section"> -->
 				<ul class="categories__items">
-					<!-- -------VERTICAL V2 CARDS------- -->
 					<li class="categories__list">
-						<article class="card card--vertical_v2 card--badge card--shopping">
-							<div class="card__content flex">
-								<header class="card__header flex-center">
-									<figure class="card__figure">
-										<img
-											class="card_img"
-											src="https://picsum.photos/400/350"
-											alt="randomly generated"
-										/>
-									</figure>
-								</header>
-								<div class="card__body">
-									<div class="card__header_text">
-										<h2 class="card__title">Cricket Bag</h2>
-										<h3 class="card__subtitle">
-											MRF Genius Cameo Senior Cricket Kit Bag
-										</h3>
-									</div>
-									<p class="card__para">
-										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
-										Reic iendis sint perspi ciatis
-									</p>
-									<p class="card__price flex">
-										<span class="disc_price">₹1,500</span>
-										<span class="original_price">₹2,000</span>
-										<span class="pct_disc">25% off</span>
-									</p>
-								</div>
-							</div>
-							<div class="card__footer">
-								<div class="card__actions">
-									<button class="card__button btn btn--outline--primary">
-										Add to Cart
-									</button>
-									<button class="card__button btn btn--primary">Buy Now</button>
-								</div>
-								<ul class="card__icons">
-									<li class="card__list flex-center">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular like"
-										>
-											<i class="bx bx-heart"></i>
-										</a>
-									</li>
-									<li class="card__list share">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular"
-										>
-											<i class="bx bx-share-alt"></i>
-										</a>
-									</li>
-									<li class="card__list options">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular"
-										>
-											<i class="bx bx-dots-vertical-rounded"></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="card__badge ribbon">
-								<span>new</span>
-							</div>
-							<div
-								class="card__dismiss dark btn btn--icon btn--close--transparent alert--btn__dismiss btn--circular"
-							>
-								<i class="bx bx-x"></i>
-							</div>
-						</article>
-					</li>
-
-					<li class="categories__list">
-						<article
-							class="card card--vertical_v2 card--dismiss card--shopping"
-						>
-							<div class="card__content flex">
-								<header class="card__header flex-center">
-									<figure class="card__figure">
-										<img
-											class="card_img"
-											src="https://picsum.photos/400/350"
-											alt="randomly generated"
-										/>
-									</figure>
-								</header>
-								<div class="card__body">
-									<div class="card__header_text">
-										<h2 class="card__title">Cricket Bag</h2>
-										<h3 class="card__subtitle">
-											MRF Genius Cameo Senior Cricket Kit Bag
-										</h3>
-									</div>
-									<p class="card__para">
-										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
-										Reic iendis sint perspi ciatis
-									</p>
-									<p class="card__price flex">
-										<span class="disc_price">₹1,500</span>
-										<span class="original_price">₹2,000</span>
-										<span class="pct_disc">25% off</span>
-									</p>
-								</div>
-							</div>
-							<div class="card__footer">
-								<div class="card__actions">
-									<button class="card__button btn btn--outline--primary">
-										Add to Cart
-									</button>
-									<button class="card__button btn btn--primary">Buy Now</button>
-								</div>
-								<ul class="card__icons">
-									<li class="card__list flex-center">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular like"
-										>
-											<i class="bx bx-heart"></i>
-										</a>
-									</li>
-									<li class="card__list share">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular"
-										>
-											<i class="bx bx-share-alt"></i>
-										</a>
-									</li>
-									<li class="card__list options">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular"
-										>
-											<i class="bx bx-dots-vertical-rounded"></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="card__badge ribbon">
-								<span>new</span>
-							</div>
-							<div
-								class="card__dismiss dark btn btn--icon btn--close--transparent alert--btn__dismiss btn--circular"
-							>
-								<i class="bx bx-x"></i>
-							</div>
-						</article>
-					</li>
-
-					<li class="categories__list">
-						<article
-							class="card card--vertical_v2 card--dismiss card--shopping"
-						>
-							<div class="card__content flex">
-								<header class="card__header flex-center">
-									<figure class="card__figure">
-										<img
-											class="card_img"
-											src="https://picsum.photos/400/350"
-											alt="randomly generated"
-										/>
-									</figure>
-								</header>
-								<div class="card__body">
-									<div class="card__header_text">
-										<h2 class="card__title">Cricket Bag</h2>
-										<h3 class="card__subtitle">
-											MRF Genius Cameo Senior Cricket Kit Bag
-										</h3>
-									</div>
-									<p class="card__para">
-										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
-										Reic iendis sint perspi ciatis
-									</p>
-									<p class="card__price flex">
-										<span class="disc_price">₹1,500</span>
-										<span class="original_price">₹2,000</span>
-										<span class="pct_disc">25% off</span>
-									</p>
-								</div>
-							</div>
-							<div class="card__footer">
-								<div class="card__actions">
-									<button class="card__button btn btn--outline--primary">
-										Add to Cart
-									</button>
-									<button class="card__button btn btn--primary">Buy Now</button>
-								</div>
-								<ul class="card__icons">
-									<li class="card__list flex-center">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular like"
-										>
-											<i class="bx bx-heart"></i>
-										</a>
-									</li>
-									<li class="card__list share">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular"
-										>
-											<i class="bx bx-share-alt"></i>
-										</a>
-									</li>
-									<li class="card__list options">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular"
-										>
-											<i class="bx bx-dots-vertical-rounded"></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="card__badge ribbon">
-								<span>new</span>
-							</div>
-							<div
-								class="card__dismiss dark btn btn--icon btn--close--transparent alert--btn__dismiss btn--circular"
-							>
-								<i class="bx bx-x"></i>
-							</div>
-						</article>
-					</li>
-
-					<li class="categories__list">
-						<article
-							class="card card--vertical_v2 card--dismiss card--shopping"
-						>
-							<div class="card__content flex">
-								<header class="card__header flex-center">
-									<figure class="card__figure">
-										<img
-											class="card_img"
-											src="https://picsum.photos/400/350"
-											alt="randomly generated"
-										/>
-									</figure>
-								</header>
-								<div class="card__body">
-									<div class="card__header_text">
-										<h2 class="card__title">Cricket Bag</h2>
-										<h3 class="card__subtitle">
-											MRF Genius Cameo Senior Cricket Kit Bag
-										</h3>
-									</div>
-									<p class="card__para">
-										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
-										Reic iendis sint perspi ciatis
-									</p>
-									<p class="card__price flex">
-										<span class="disc_price">₹1,500</span>
-										<span class="original_price">₹2,000</span>
-										<span class="pct_disc">25% off</span>
-									</p>
-								</div>
-							</div>
-							<div class="card__footer">
-								<div class="card__actions">
-									<button class="card__button btn btn--outline--primary">
-										Add to Cart
-									</button>
-									<button class="card__button btn btn--primary">Buy Now</button>
-								</div>
-								<ul class="card__icons">
-									<li class="card__list flex-center">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular like"
-										>
-											<i class="bx bx-heart"></i>
-										</a>
-									</li>
-									<li class="card__list share">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular"
-										>
-											<i class="bx bx-share-alt"></i>
-										</a>
-									</li>
-									<li class="card__list options">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular"
-										>
-											<i class="bx bx-dots-vertical-rounded"></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="card__badge ribbon">
-								<span>new</span>
-							</div>
-							<div
-								class="card__dismiss dark btn btn--icon btn--close--transparent alert--btn__dismiss btn--circular"
-							>
-								<i class="bx bx-x"></i>
-							</div>
-						</article>
-					</li>
-
-					<!-- -------VERTICAL CARDS------- -->
-					<li class="categories__list">
-						<article class="card card--vertical card--badge">
-							<div class="card__content flex">
-								<header class="card__header flex-center">
-									<figure class="card__figure">
-										<img
-											class="card_img"
-											src="https://picsum.photos/400/200"
-											alt="randomly generated"
-										/>
-									</figure>
-								</header>
-								<div class="card__body">
-									<div class="card__header_text">
-										<h2 class="card__title">Cricket Bag</h2>
-										<h3 class="card__subtitle">
-											MRF Genius Cameo Senior Cricket Kit Bag
-										</h3>
-									</div>
-									<p class="card__para">
-										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
-										Reic iendis sint perspi ciatis
-									</p>
-									<p class="card__price flex">
-										<span class="disc_price">₹1,500</span>
-										<span class="original_price">₹2,000</span>
-										<span class="pct_disc">25% off</span>
-									</p>
-								</div>
-							</div>
-							<div class="card__footer">
-								<div class="card__actions">
-									<button class="card__button btn btn--outline--primary">
-										Add to Cart
-									</button>
-									<button class="card__button btn btn--primary">Buy Now</button>
-								</div>
-								<ul class="card__icons">
-									<li class="card__list flex-center">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular"
-										>
-											<i class="bx bx-heart"></i>
-										</a>
-									</li>
-									<li class="card__list">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular"
-										>
-											<i class="bx bx-share-alt"></i>
-										</a>
-									</li>
-									<li class="card__list">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular"
-										>
-											<i class="bx bx-dots-vertical-rounded"></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="card__badge ribbon">
-								<span>popular</span>
-							</div>
-						</article>
+						<a href="/pages/products/products.html" class="categories__links">
+							<img
+								src="/assets/homepage/bats.jpg"
+								alt=""
+								class="image--responsive"
+							/>
+							<span class="catergories__name">Cricket Bat</span>
+						</a>
 					</li>
 					<li class="categories__list">
-						<article class="card card--vertical card--badge">
-							<div class="card__content flex">
-								<header class="card__header flex-center">
-									<figure class="card__figure">
-										<img
-											class="card_img"
-											src="https://picsum.photos/400/200"
-											alt="randomly generated"
-										/>
-									</figure>
-								</header>
-								<div class="card__body">
-									<div class="card__header_text">
-										<h2 class="card__title">Cricket Bag</h2>
-										<h3 class="card__subtitle">
-											MRF Genius Cameo Senior Cricket Kit Bag
-										</h3>
-									</div>
-									<p class="card__para">
-										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
-										Reic iendis sint perspi ciatis
-									</p>
-									<p class="card__price flex">
-										<span class="disc_price">₹1,500</span>
-										<span class="original_price">₹2,000</span>
-										<span class="pct_disc">25% off</span>
-									</p>
-								</div>
-							</div>
-							<div class="card__footer">
-								<div class="card__actions">
-									<button class="card__button btn btn--outline--primary">
-										Add to Cart
-									</button>
-									<button class="card__button btn btn--primary">Buy Now</button>
-								</div>
-								<ul class="card__icons">
-									<li class="card__list flex-center">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular"
-										>
-											<i class="bx bx-heart"></i>
-										</a>
-									</li>
-									<li class="card__list">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular"
-										>
-											<i class="bx bx-share-alt"></i>
-										</a>
-									</li>
-									<li class="card__list">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular"
-										>
-											<i class="bx bx-dots-vertical-rounded"></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="card__badge ribbon">
-								<span>popular</span>
-							</div>
-						</article>
+						<a href="/pages/products/products.html" class="categories__links">
+							<img
+								src="/assets/homepage/bats.jpg"
+								alt=""
+								class="image--responsive"
+							/>
+							<span class="catergories__name">Cricket Bat</span>
+						</a>
 					</li>
 					<li class="categories__list">
-						<article class="card card--vertical">
-							<div class="card__content flex">
-								<header class="card__header flex-center">
-									<figure class="card__figure">
-										<img
-											class="card_img"
-											src="https://picsum.photos/400/200"
-											alt="randomly generated"
-										/>
-									</figure>
-								</header>
-								<div class="card__body">
-									<div class="card__header_text">
-										<h2 class="card__title">Cricket Bag</h2>
-										<h3 class="card__subtitle">
-											MRF Genius Cameo Senior Cricket Kit Bag
-										</h3>
-									</div>
-									<p class="card__para">
-										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
-										Reic iendis sint perspi ciatis
-									</p>
-									<p class="card__price flex">
-										<span class="disc_price">₹1,500</span>
-										<span class="original_price">₹2,000</span>
-										<span class="pct_disc">25% off</span>
-									</p>
-								</div>
-							</div>
-							<div class="card__footer">
-								<div class="card__actions">
-									<button class="card__button btn btn--outline--primary">
-										Add to Cart
-									</button>
-									<button class="card__button btn btn--primary">Buy Now</button>
-								</div>
-								<ul class="card__icons">
-									<li class="card__list flex-center">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular"
-										>
-											<i class="bx bx-heart"></i>
-										</a>
-									</li>
-									<li class="card__list">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular"
-										>
-											<i class="bx bx-share-alt"></i>
-										</a>
-									</li>
-									<li class="card__list">
-										<a
-											href="#"
-											class="card__link btn btn--outline--primary btn--icon btn--circular"
-										>
-											<i class="bx bx-dots-vertical-rounded"></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="card__badge ribbon">
-								<span>popular</span>
-							</div>
-						</article>
+						<a href="/pages/products/products.html" class="categories__links">
+							<img
+								src="/assets/homepage/bats.jpg"
+								alt=""
+								class="image--responsive"
+							/>
+							<span class="catergories__name">Cricket Bat</span>
+						</a>
 					</li>
-
+					<li class="categories__list">
+						<a href="/pages/products/products.html" class="categories__links">
+							<img
+								src="/assets/homepage/bats.jpg"
+								alt=""
+								class="image--responsive"
+							/>
+							<span class="catergories__name">Cricket Bat</span>
+						</a>
+					</li>
+					<li class="categories__list">
+						<a href="/pages/products/products.html" class="categories__links">
+							<img
+								src="/assets/homepage/bats.jpg"
+								alt=""
+								class="image--responsive"
+							/>
+							<span class="catergories__name">Cricket Bat</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section class="promotion_container">
+				<a href="/pages/products/products.html"
+					><img
+						src="/assets/homepage/bats.jpg"
+						alt=""
+						class="image--responsive"
+					/>
+				</a>
+			</section>
+			<section class="homepage__section items_container">
+				<h2 class="h2 section__heading">Products</h2>
+				<ul class="categories__items">
 					<!-- -------HORIZONTAL CARDS------- -->
 					<li class="categories__list">
 						<article class="card card--horizontal card--badge">
@@ -786,7 +213,7 @@
 						</article>
 					</li>
 					<li class="categories__list">
-						<article class="card card--horizontal card--dismiss">
+						<article class="card card--horizontal">
 							<div class="card__content flex">
 								<header class="card__header flex-center">
 									<figure class="card__figure">
@@ -859,11 +286,9 @@
 						</article>
 					</li>
 
-					<!-- -------HORIZONTAL V2 CARDS------- -->
+					<!-- -------VERTICAL CARDS------- -->
 					<li class="categories__list">
-						<article
-							class="card card--horizontal_v2 card--badge card--shopping"
-						>
+						<article class="card card--vertical card--badge">
 							<div class="card__content flex">
 								<header class="card__header flex-center">
 									<figure class="card__figure">
@@ -877,7 +302,9 @@
 								<div class="card__body">
 									<div class="card__header_text">
 										<h2 class="card__title">Cricket Bag</h2>
-										<h3 class="card__subtitle">MRF Genius Cameo Senior</h3>
+										<h3 class="card__subtitle">
+											MRF Genius Cameo Senior Cricket Kit Bag
+										</h3>
 									</div>
 									<p class="card__para">
 										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
@@ -888,31 +315,472 @@
 										<span class="original_price">₹2,000</span>
 										<span class="pct_disc">25% off</span>
 									</p>
-									<div class="card__footer">
-										<div class="card__actions">
-											<button class="card__button btn btn--outline--primary">
-												Add to Cart
-											</button>
-											<button class="card__button btn btn--primary">
-												Buy Now
-											</button>
-										</div>
-										<ul class="card__icons">
-											<li class="card__list flex-center">
-												<a
-													href="#"
-													class="card__link btn btn--outline--primary btn--icon btn--circular like"
-												>
-													<i class="bx bx-heart"></i>
-												</a>
-											</li>
-										</ul>
-									</div>
 								</div>
 							</div>
-
+							<div class="card__footer">
+								<div class="card__actions">
+									<button class="card__button btn btn--outline--primary">
+										Add to Cart
+									</button>
+									<button class="card__button btn btn--primary">Buy Now</button>
+								</div>
+								<ul class="card__icons">
+									<li class="card__list flex-center">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-heart"></i>
+										</a>
+									</li>
+									<li class="card__list">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-share-alt"></i>
+										</a>
+									</li>
+									<li class="card__list">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-dots-vertical-rounded"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
 							<div class="card__badge ribbon">
-								<span>new</span>
+								<span>popular</span>
+							</div>
+						</article>
+					</li>
+
+					<li class="categories__list">
+						<article class="card card--vertical">
+							<div class="card__content flex">
+								<header class="card__header flex-center">
+									<figure class="card__figure">
+										<img
+											class="card_img"
+											src="https://picsum.photos/400/300"
+											alt="randomly generated"
+										/>
+									</figure>
+								</header>
+								<div class="card__body">
+									<div class="card__header_text">
+										<h2 class="card__title">Cricket Bag</h2>
+										<h3 class="card__subtitle">
+											MRF Genius Cameo Senior Cricket Kit Bag
+										</h3>
+									</div>
+									<p class="card__para">
+										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
+										Reic iendis sint perspi ciatis
+									</p>
+									<p class="card__price flex">
+										<span class="disc_price">₹1,500</span>
+										<span class="original_price">₹2,000</span>
+										<span class="pct_disc">25% off</span>
+									</p>
+								</div>
+							</div>
+							<div class="card__footer">
+								<div class="card__actions">
+									<button class="card__button btn btn--outline--primary">
+										Add to Cart
+									</button>
+									<button class="card__button btn btn--primary">Buy Now</button>
+								</div>
+								<ul class="card__icons">
+									<li class="card__list flex-center">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-heart"></i>
+										</a>
+									</li>
+									<li class="card__list">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-share-alt"></i>
+										</a>
+									</li>
+									<li class="card__list">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-dots-vertical-rounded"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="card__badge ribbon">
+								<span>popular</span>
+							</div>
+						</article>
+					</li>
+
+					<li class="categories__list">
+						<article class="card card--vertical card--badge">
+							<div class="card__content flex">
+								<header class="card__header flex-center">
+									<figure class="card__figure">
+										<img
+											class="card_img"
+											src="https://picsum.photos/400/300"
+											alt="randomly generated"
+										/>
+									</figure>
+								</header>
+								<div class="card__body">
+									<div class="card__header_text">
+										<h2 class="card__title">Cricket Bag</h2>
+										<h3 class="card__subtitle">
+											MRF Genius Cameo Senior Cricket Kit Bag
+										</h3>
+									</div>
+									<p class="card__para">
+										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
+										Reic iendis sint perspi ciatis
+									</p>
+									<p class="card__price flex">
+										<span class="disc_price">₹1,500</span>
+										<span class="original_price">₹2,000</span>
+										<span class="pct_disc">25% off</span>
+									</p>
+								</div>
+							</div>
+							<div class="card__footer">
+								<div class="card__actions">
+									<button class="card__button btn btn--outline--primary">
+										Add to Cart
+									</button>
+									<button class="card__button btn btn--primary">Buy Now</button>
+								</div>
+								<ul class="card__icons">
+									<li class="card__list flex-center">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-heart"></i>
+										</a>
+									</li>
+									<li class="card__list">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-share-alt"></i>
+										</a>
+									</li>
+									<li class="card__list">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-dots-vertical-rounded"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="card__badge ribbon">
+								<span>popular</span>
+							</div>
+						</article>
+					</li>
+				</ul>
+			</section>
+		</main>
+		<script src="/javascript/darkmodetoggler.js"></script>
+	</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Magnificent-Store</title>
+
+		<!-- Fav-Icon -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="assets/brand-logos/logo-bg-white.png"
+		/>
+
+		<!-- Box-Icons -->
+		<link
+			href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Magnificent-UI library -->
+		<link
+			rel="stylesheet"
+			href="https://magnificentui.netlify.app/src/magnificent.css"
+		/>
+
+		<!-- Store-CSS -->
+		<link rel="stylesheet" href="/styles/style.css" />
+	</head>
+	<body class="body--homepage">
+		<header class="header">
+			<a class="brand__text" href="/pages/homepage/homepage.html"
+				>Magnificent Store</a
+			>
+			<form class="search_box" method="get">
+				<input
+					type="text"
+					class="input_box"
+					placeholder="Search for items"
+					required
+				/>
+
+				<button type="submit" class="btn btn--primary btn--icon">
+					<i class="bx bx-search-alt-2"></i>
+				</button>
+			</form>
+			<div class="header__nav_btns">
+				<a class="btn btn--primary" href="/pages/signin/signin.html">Login</a>
+				<a
+					class="header__links badge_base btn btn--primary btn--icon btn--circular"
+					href="/pages/wishlist/wishlist.html"
+				>
+					<i class="bx bxs-heart"></i>
+					<span class="badge color--primary width_height--sm">5+</span>
+				</a>
+				<a
+					class="header__links badge_base btn btn--primary btn--icon btn--circular"
+					href="/pages/cart/cart.html"
+				>
+					<i class="bx bxs-cart"></i>
+					<span class="badge color--primary width_height--sm">5+</span>
+				</a>
+				<a
+					class="header__links badge_base btn btn--primary btn--icon btn--circular theme__toggler"
+				>
+					<i class="bx bxs-moon"></i>
+				</a>
+			</div>
+		</header>
+		<main class="main--homepage">
+			<section class="homepage__section categories">
+				<h2 class="h2 section__heading">Product Categories</h2>
+				<!-- <hr class="hr__section"> -->
+				<ul class="categories__items">
+					<li class="categories__list">
+						<a href="/pages/products/products.html" class="categories__links">
+							<img
+								src="/assets/homepage/bats.jpg"
+								alt=""
+								class="image--responsive"
+							/>
+							<span class="catergories__name">Cricket Bat</span>
+						</a>
+					</li>
+					<li class="categories__list">
+						<a href="/pages/products/products.html" class="categories__links">
+							<img
+								src="/assets/homepage/bats.jpg"
+								alt=""
+								class="image--responsive"
+							/>
+							<span class="catergories__name">Cricket Bat</span>
+						</a>
+					</li>
+					<li class="categories__list">
+						<a href="/pages/products/products.html" class="categories__links">
+							<img
+								src="/assets/homepage/bats.jpg"
+								alt=""
+								class="image--responsive"
+							/>
+							<span class="catergories__name">Cricket Bat</span>
+						</a>
+					</li>
+					<li class="categories__list">
+						<a href="/pages/products/products.html" class="categories__links">
+							<img
+								src="/assets/homepage/bats.jpg"
+								alt=""
+								class="image--responsive"
+							/>
+							<span class="catergories__name">Cricket Bat</span>
+						</a>
+					</li>
+					<li class="categories__list">
+						<a href="/pages/products/products.html" class="categories__links">
+							<img
+								src="/assets/homepage/bats.jpg"
+								alt=""
+								class="image--responsive"
+							/>
+							<span class="catergories__name">Cricket Bat</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section class="promotion_container">
+				<a href="/pages/products/products.html"
+					><img
+						src="/assets/homepage/bats.jpg"
+						alt=""
+						class="image--responsive"
+					/>
+				</a>
+			</section>
+			<section class="homepage__section items_container">
+				<h2 class="h2 section__heading">Products</h2>
+				<ul class="categories__items">
+					<!-- -------HORIZONTAL CARDS------- -->
+					<li class="categories__list">
+						<article class="card card--horizontal card--badge">
+							<div class="card__content flex">
+								<header class="card__header flex-center">
+									<figure class="card__figure">
+										<img
+											class="image--responsive"
+											src="https://picsum.photos/400/300"
+											alt="randomly generated"
+										/>
+									</figure>
+								</header>
+								<div class="card__body">
+									<div class="card__header_text">
+										<h2 class="card__title">Cricket Bag</h2>
+										<h3 class="card__subtitle">
+											MRF Genius Cameo Senior Cricket Kit Bag
+										</h3>
+									</div>
+									<p class="card__para">
+										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
+									</p>
+									<p class="card__price flex">
+										<span class="disc_price">₹1,500</span>
+										<span class="original_price">₹2,000</span>
+										<span class="pct_disc">25% off</span>
+									</p>
+								</div>
+							</div>
+							<div class="card__footer">
+								<div class="card__actions">
+									<button class="card__button btn btn--outline--primary">
+										Add to Cart
+									</button>
+									<button class="card__button btn btn--primary">Buy Now</button>
+								</div>
+								<ul class="card__icons">
+									<li class="card__list flex-center">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-heart"></i>
+										</a>
+									</li>
+									<li class="card__list">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-share-alt"></i>
+										</a>
+									</li>
+									<li class="card__list">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-dots-vertical-rounded"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="card__badge ribbon">
+								<span>Popular</span>
+							</div>
+							<div
+								class="card__dismiss dark btn btn--icon btn--close--transparent alert--btn__dismiss btn--circular"
+							>
+								<i class="bx bx-x"></i>
+							</div>
+						</article>
+					</li>
+					<li class="categories__list">
+						<article class="card card--horizontal">
+							<div class="card__content flex">
+								<header class="card__header flex-center">
+									<figure class="card__figure">
+										<img
+											class="image--responsive"
+											src="https://picsum.photos/400/300"
+											alt="randomly generated"
+										/>
+									</figure>
+								</header>
+								<div class="card__body">
+									<div class="card__header_text">
+										<h2 class="card__title">Cricket Bag</h2>
+										<h3 class="card__subtitle">
+											MRF Genius Cameo Senior Cricket Kit Bag
+										</h3>
+									</div>
+									<p class="card__para">
+										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
+									</p>
+									<p class="card__price flex">
+										<span class="disc_price">₹1,500</span>
+										<span class="original_price">₹2,000</span>
+										<span class="pct_disc">25% off</span>
+									</p>
+								</div>
+							</div>
+							<div class="card__footer">
+								<div class="card__actions">
+									<button class="card__button btn btn--outline--primary">
+										Add to Cart
+									</button>
+									<button class="card__button btn btn--primary">Buy Now</button>
+								</div>
+								<ul class="card__icons">
+									<li class="card__list flex-center">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-heart"></i>
+										</a>
+									</li>
+									<li class="card__list">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-share-alt"></i>
+										</a>
+									</li>
+									<li class="card__list">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-dots-vertical-rounded"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="card__badge ribbon">
+								<span>popular</span>
 							</div>
 							<div
 								class="card__dismiss dark btn btn--icon btn--close--transparent alert--btn__dismiss btn--circular"
@@ -922,10 +790,9 @@
 						</article>
 					</li>
 
+					<!-- -------VERTICAL CARDS------- -->
 					<li class="categories__list">
-						<article
-							class="card card--horizontal_v2 card--badge card--shopping"
-						>
+						<article class="card card--vertical card--badge">
 							<div class="card__content flex">
 								<header class="card__header flex-center">
 									<figure class="card__figure">
@@ -939,7 +806,9 @@
 								<div class="card__body">
 									<div class="card__header_text">
 										<h2 class="card__title">Cricket Bag</h2>
-										<h3 class="card__subtitle">MRF Genius Cameo Senior</h3>
+										<h3 class="card__subtitle">
+											MRF Genius Cameo Senior Cricket Kit Bag
+										</h3>
 									</div>
 									<p class="card__para">
 										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
@@ -950,107 +819,50 @@
 										<span class="original_price">₹2,000</span>
 										<span class="pct_disc">25% off</span>
 									</p>
-									<div class="card__footer">
-										<div class="card__actions">
-											<button class="card__button btn btn--outline--primary">
-												Add to Cart
-											</button>
-											<button class="card__button btn btn--primary">
-												Buy Now
-											</button>
-										</div>
-										<ul class="card__icons">
-											<li class="card__list flex-center">
-												<a
-													href="#"
-													class="card__link btn btn--outline--primary btn--icon btn--circular like"
-												>
-													<i class="bx bx-heart"></i>
-												</a>
-											</li>
-										</ul>
-									</div>
 								</div>
 							</div>
-
-							<div class="card__badge ribbon">
-								<span>new</span>
-							</div>
-							<div
-								class="card__dismiss dark btn btn--icon btn--close--transparent alert--btn__dismiss btn--circular"
-							>
-								<i class="bx bx-x"></i>
-							</div>
-						</article>
-					</li>
-
-					<!-- -------HORIZONTAL V2 with WishList CARDS------- -->
-					<li class="categories__list">
-						<article
-							class="card card--horizontal_v2 card--badge card--shopping"
-						>
-							<div class="card__content flex">
-								<header class="card__header flex-center">
-									<figure class="card__figure">
-										<img
-											class="card_img"
-											src="https://picsum.photos/400/300"
-											alt="randomly generated"
-										/>
-									</figure>
-								</header>
-								<div class="card__body">
-									<div class="card__header_text">
-										<h2 class="card__title">Cricket Bag</h2>
-										<h3 class="card__subtitle">MRF Genius Cameo Senior</h3>
-									</div>
-									<p class="card__para">
-										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
-										Reic iendis sint perspi ciatis
-									</p>
-									<p class="card__price flex">
-										<span class="disc_price">₹1,500</span>
-										<span class="original_price">₹2,000</span>
-										<span class="pct_disc">25% off</span>
-									</p>
-									<div class="card__footer">
-										<div class="card__actions">
-											<button class="card__button btn btn--outline--primary">
-												Go to Cart
-											</button>
-											<button class="card__button btn btn--primary">
-												Remove from WishList
-											</button>
-										</div>
-										<ul class="card__icons display--none">
-											<li class="card__list flex-center">
-												<a
-													href="#"
-													class="card__link btn btn--outline--primary btn--icon btn--circular like"
-												>
-													<i class="bx bx-heart"></i>
-												</a>
-											</li>
-										</ul>
-									</div>
+							<div class="card__footer">
+								<div class="card__actions">
+									<button class="card__button btn btn--outline--primary">
+										Add to Cart
+									</button>
+									<button class="card__button btn btn--primary">Buy Now</button>
 								</div>
+								<ul class="card__icons">
+									<li class="card__list flex-center">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-heart"></i>
+										</a>
+									</li>
+									<li class="card__list">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-share-alt"></i>
+										</a>
+									</li>
+									<li class="card__list">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-dots-vertical-rounded"></i>
+										</a>
+									</li>
+								</ul>
 							</div>
-
 							<div class="card__badge ribbon">
-								<span>new</span>
-							</div>
-							<div
-								class="card__dismiss dark btn btn--icon btn--close--transparent alert--btn__dismiss btn--circular"
-							>
-								<i class="bx bx-x"></i>
+								<span>popular</span>
 							</div>
 						</article>
 					</li>
 
 					<li class="categories__list">
-						<article
-							class="card card--horizontal_v2 card--badge card--shopping"
-						>
+						<article class="card card--vertical">
 							<div class="card__content flex">
 								<header class="card__header flex-center">
 									<figure class="card__figure">
@@ -1064,7 +876,9 @@
 								<div class="card__body">
 									<div class="card__header_text">
 										<h2 class="card__title">Cricket Bag</h2>
-										<h3 class="card__subtitle">MRF Genius Cameo Senior</h3>
+										<h3 class="card__subtitle">
+											MRF Genius Cameo Senior Cricket Kit Bag
+										</h3>
 									</div>
 									<p class="card__para">
 										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
@@ -1075,36 +889,114 @@
 										<span class="original_price">₹2,000</span>
 										<span class="pct_disc">25% off</span>
 									</p>
-									<div class="card__footer">
-										<div class="card__actions">
-											<button class="card__button btn btn--outline--primary">
-												Add to Cart
-											</button>
-											<button class="card__button btn btn--primary">
-												Save to WishList
-											</button>
-										</div>
-										<ul class="card__icons display--none">
-											<li class="card__list flex-center">
-												<a
-													href="#"
-													class="card__link btn btn--outline--primary btn--icon btn--circular like"
-												>
-													<i class="bx bx-heart"></i>
-												</a>
-											</li>
-										</ul>
-									</div>
 								</div>
 							</div>
-
-							<div class="card__badge ribbon">
-								<span>new</span>
+							<div class="card__footer">
+								<div class="card__actions">
+									<button class="card__button btn btn--outline--primary">
+										Add to Cart
+									</button>
+									<button class="card__button btn btn--primary">Buy Now</button>
+								</div>
+								<ul class="card__icons">
+									<li class="card__list flex-center">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-heart"></i>
+										</a>
+									</li>
+									<li class="card__list">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-share-alt"></i>
+										</a>
+									</li>
+									<li class="card__list">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-dots-vertical-rounded"></i>
+										</a>
+									</li>
+								</ul>
 							</div>
-							<div
-								class="card__dismiss dark btn btn--icon btn--close--transparent alert--btn__dismiss btn--circular"
-							>
-								<i class="bx bx-x"></i>
+							<div class="card__badge ribbon">
+								<span>popular</span>
+							</div>
+						</article>
+					</li>
+
+					<li class="categories__list">
+						<article class="card card--vertical card--badge">
+							<div class="card__content flex">
+								<header class="card__header flex-center">
+									<figure class="card__figure">
+										<img
+											class="card_img"
+											src="https://picsum.photos/400/300"
+											alt="randomly generated"
+										/>
+									</figure>
+								</header>
+								<div class="card__body">
+									<div class="card__header_text">
+										<h2 class="card__title">Cricket Bag</h2>
+										<h3 class="card__subtitle">
+											MRF Genius Cameo Senior Cricket Kit Bag
+										</h3>
+									</div>
+									<p class="card__para">
+										Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
+										Reic iendis sint perspi ciatis
+									</p>
+									<p class="card__price flex">
+										<span class="disc_price">₹1,500</span>
+										<span class="original_price">₹2,000</span>
+										<span class="pct_disc">25% off</span>
+									</p>
+								</div>
+							</div>
+							<div class="card__footer">
+								<div class="card__actions">
+									<button class="card__button btn btn--outline--primary">
+										Add to Cart
+									</button>
+									<button class="card__button btn btn--primary">Buy Now</button>
+								</div>
+								<ul class="card__icons">
+									<li class="card__list flex-center">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-heart"></i>
+										</a>
+									</li>
+									<li class="card__list">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-share-alt"></i>
+										</a>
+									</li>
+									<li class="card__list">
+										<a
+											href="#"
+											class="card__link btn btn--outline--primary btn--icon btn--circular"
+										>
+											<i class="bx bx-dots-vertical-rounded"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="card__badge ribbon">
+								<span>popular</span>
 							</div>
 						</article>
 					</li>
